@@ -1,139 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIT - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            position: relative;
-            height: 40vh;
-            min-height: 260px;
-            max-height: 380px;
-            overflow: hidden;
-        }
-        header img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(65%);
-        }
-        header .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-        }
-        header .overlay h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-        header .overlay p {
-            font-size: 22px;
-        }
-        nav {
-            background: white;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #1f6f5c;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #0d4d3b;
-        }
-        .content {
-            max-width: 1100px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 40px 20px;;
-        }
-        .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #004d26;
-        }
-        .content p {
-            font-size: 20px;
-            line-height: 1.6;
-        }
-        .button-group {
-            margin-top: 30px;
-        }
-        .button-group a {
-            background-color: #1f6f5c;
-            color: white;
-            padding: 12px 26px;
-            margin: 10px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            display: inline-block;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            transition: all 0.2s ease;
-        }
-        .button-group a:hover {
-            background-color: #0d4d3b;
-            transform: translateY(-1px);
-        }
-        footer {
-            margin-top: 80px;
-            padding: 40px 20px;
-            text-align: center;
-            background: #f2f5f3;
-            color: #4b4b4b;
-            font-size: 14px;
-            border-top: 1px solid #e5e5e5;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Interactive — Shopify Development &amp; Subscription Growth</title>
+<meta name="description" content="Shopify store builds, migrations, and subscription/retention systems. International Interactive LLC.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <img src="path-digital-tR0jvlsmCuQ-unsplash.jpg" alt="Tech Background">
-        <div class="overlay">
-            <h1>IIT</h1>
-            <p>Helping Shopify Brands Increase Repeat Revenue Using Customer Data</p>
-            <p>Retention analytics, subscription optimization, and growth-focused Shopify management.</p>
-        </div>
-    </header>
-
-    <nav>
-        <a href="about.html">How We Help</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">International <span>Interactive</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content">
-        <h2>Turn Your Customer Data Into More Repeat Sales</h2>
-        <p>IIT helps Shopify and subscription-based brands uncover hidden revenue opportunities in their customer data. We focus on retention, lifetime value, and repeat purchase growth — not just traffic.</p>
-        
-        <div class="button-group">
-            <a href="about.html">How We Increase Revenue</a>
-            <a href="services.html">Our Services</a>
-            <a href="contact.html">Book a Call</a>
-        </div>
+<div class="wrap">
+  <section class="hero no-border">
+    <div>
+      <span class="eyebrow">Shopify · Subscriptions · Data</span>
+      <h1>Shopify growth, engineered around retention.</h1>
+      <p class="lede">International Interactive builds and rebuilds Shopify stores with subscription and repeat-revenue data at the center — not just the launch, but the systems that keep customers coming back.</p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="contact.html">Book a Call</a>
+        <a class="btn btn-ghost" href="services.html">See Services</a>
+      </div>
     </div>
+    <div class="wave-box">
+      <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave-path" d="M10,230 C70,200 110,250 160,215 C210,180 250,225 300,180 C350,135 390,175 440,120 C475,85 500,100 550,60" />
+        <circle class="wave-dot" cx="550" cy="60" r="5"></circle>
+        <text class="wave-label" x="470" y="45">repeat revenue →</text>
+      </svg>
+    </div>
+  </section>
+</div>
 
-    <footer>
-        &copy; 2025 IIT - International Interactive LLC. All rights reserved.
-    </footer>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Proof</span>
+      <h2>Who we've worked with</h2>
+    </div>
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="tag">Battery Bill's</span>
+        <h3>WordPress → Shopify rebuild</h3>
+        <p>Store site rebuild on Shopify, migrating off a legacy WordPress setup, with technical direction on the full build.</p>
+      </div>
+      <div class="case-card">
+        <span class="tag">Aloha Palms Hospitality</span>
+        <h3>Optimization &amp; retention tooling</h3>
+        <p>Cart and site optimization, review app integration, and search visibility improvements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How we help</span>
+      <h2>Three ways we work with Shopify brands</h2>
+    </div>
+    <div class="grid-3">
+      <div class="feature-card">
+        <span class="num">01</span>
+        <h3>Store Builds &amp; Migrations</h3>
+        <p>Moving off WordPress or another legacy platform onto Shopify, theme customization, and full site rebuilds start to finish.</p>
+      </div>
+      <div class="feature-card">
+        <span class="num">02</span>
+        <h3>Subscription &amp; Retention Systems</h3>
+        <p>Recharge and subscription-app setup, repeat-purchase flows, and the store architecture that makes retention easier to grow.</p>
+      </div>
+      <div class="feature-card">
+        <span class="num">03</span>
+        <h3>Ongoing Technical Ownership</h3>
+        <p>Retainer-based technical direction — one person who knows the codebase, the apps, and the history of every decision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 International Interactive LLC. All rights reserved.</span>
+    <nav class="links" style="position:static;display:flex;background:none;border:none;">
+      <a href="about.html" style="padding:0;border:none;">About</a>
+      <a href="services.html" style="padding:0;border:none;">Services</a>
+      <a href="contact.html" style="padding:0;border:none;">Contact</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
