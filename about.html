@@ -1,88 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - IIT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        nav {
-            background: white;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #1f6f5c;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #0d4d3b;
-        }
-        .content {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #004d26;
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 80px;
-            padding: 40px 20px;
-            text-align: center;
-            background: #f2f5f3;
-            color: #4b4b4b;
-            font-size: 14px;
-            border-top: 1px solid #e5e5e5;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — International Interactive</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">International <span>Interactive</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content">
-        <h1>About Us</h1>
-        <p>At International Interactive Technologies (IIT), we help Shopify and subscription-based brands grow by turning customer data into smarter decisions. We believe technology should drive revenue and opportunity — not complexity.</p>
+<div class="wrap">
+  <section class="no-border" style="padding-top:72px; padding-bottom:36px;">
+    <span class="eyebrow">About</span>
+    <h1 style="font-size:38px; max-width:600px;">Built by someone who works inside Shopify and subscription data every day.</h1>
+    <p style="max-width:620px; font-size:17.5px;">International Interactive is run by Matt Ammirati, a Shopify developer with a background in data engineering. That combination means stores aren't just built to look good at launch — they're built with the customer and subscription data underneath in mind from day one.</p>
+    <p style="max-width:620px; font-size:17.5px;">Most of the work here centers on subscription commerce: Recharge and similar subscription apps, repeat-purchase flows, and the kind of store architecture that makes recurring revenue easier to see and easier to grow. Store audits, GraphQL/API integration, and point-of-sale work round out the rest.</p>
+    <p style="max-width:620px; font-size:17.5px;">For some clients that's a single project. For others it's ongoing technical ownership — being the one person who knows the store's codebase, its apps, and the reasoning behind past decisions, rather than whoever's available that week.</p>
+  </section>
+</div>
 
-        <p>We specialize in retention optimization, subscription analytics, and growth-focused Shopify management. Our work focuses on increasing customer lifetime value (LTV), improving repeat purchase rates, and uncovering hidden revenue opportunities within your existing customer base.</p>
-
-        <p>Our background spans eCommerce systems, data analytics, automation, and technical support — allowing us to not only identify growth opportunities, but also implement the systems that make them sustainable.</p>
-
-        <p>We partner with brands that want more than just traffic. They want better retention, smarter operations, and data-backed growth strategies.</p>
-
-         <p><strong>Our Approach:</strong> We combine hands-on Shopify experience with analytics and automation expertise. That means we don’t just provide insights — we help put the right systems in place to support long-term growth.</p>
-        
-        <p><strong>Our Vision:</strong> To be a trusted growth partner for modern Shopify brands seeking smarter, more profitable operations.</p>
-
-        <p><strong>Our Mission:</strong> Help eCommerce businesses increase repeat revenue through data, retention strategies, and reliable technical systems.</p>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Process</span>
+      <h2>How a project usually goes</h2>
     </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num">01</span>
+        <h3>Audit</h3>
+        <p>A look at the current store, theme, apps, and data setup to find what's actually costing revenue or slowing growth.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3>Build</h3>
+        <p>The migration, rebuild, or subscription system gets built and tested against the store's real traffic and customer data.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3>Support</h3>
+        <p>Ongoing technical ownership for stores that want a consistent point of contact rather than a one-off handoff.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 IIT - International Interactive LLC. All rights reserved.
-    </footer>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 International Interactive LLC. All rights reserved.</span>
+    <nav class="links" style="position:static;display:flex;background:none;border:none;">
+      <a href="index.html" style="padding:0;border:none;">Home</a>
+      <a href="services.html" style="padding:0;border:none;">Services</a>
+      <a href="contact.html" style="padding:0;border:none;">Contact</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
