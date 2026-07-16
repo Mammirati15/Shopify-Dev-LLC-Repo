@@ -1,113 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - IIT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        nav {
-           background: white;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #1f6f5c;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        nav a:hover {
-           color: #0d4d3b;
-        }
-        .content {
-            max-width: 700px;
-            margin: 60px auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #004d26;
-            font-size: 42px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        input, textarea {
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            width: 100%;
-        }
-        button {
-            background-color: #004d26;
-            color: white;
-            padding: 14px;
-            border: none;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 6px;
-        }
-        button:hover {
-            background-color: #00331a;
-        }
-        footer {
-            margin-top: 80px;
-            padding: 40px 20px;
-            text-align: center;
-            background: #f2f5f3;
-            color: #4b4b4b;
-            font-size: 14px;
-            border-top: 1px solid #e5e5e5;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — International Interactive</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">International <span>Interactive</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content">
-        <h1>Contact Us</h1>
-        <p>Want to increase repeat revenue from your Shopify store? Let's talk about where your customer data may be hiding growth opportunities.</p>
+<div class="wrap">
+  <section class="no-border" style="padding-top:72px;">
+    <span class="eyebrow">Contact</span>
+    <h1 style="font-size:38px; max-width:600px;">Let's talk about your store.</h1>
 
-        <p>We work with Shopify and subscription-based brands looking to improve retention, lifetime value, and repeat purchases.</p>
+    <div class="contact-layout" style="margin-top:36px;">
+      <div>
+        <p style="font-size:17px;">Send a message with what you're working on and what's not working yet — a rough sense of the project is enough to start.</p>
+        <div class="contact-note">
+          Replies come outside regular business hours (evenings/weekends, Hawaii time), so expect a response within a day or two rather than immediately.
+        </div>
+        <p style="margin-top:24px;">Prefer email directly?</p>
+        <a class="email-link" href="mailto:hello@internationalinteractive.org">hello@internationalinteractive.org</a>
+      </div>
 
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Request a Store Review</button>
-        </form>
-
-        <p>Prefer email? Reach us at <a href="mailto:matt.ammirati@gmail.com">matt.ammirati@gmail.com</a></p>
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">What's the project?</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </div>
+  </section>
+</div>
 
-    <footer>
-        &copy; 2025 IIT - International Interactive LLC. All rights reserved.
-    </footer>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 International Interactive LLC. All rights reserved.</span>
+    <nav class="links" style="position:static;display:flex;background:none;border:none;">
+      <a href="index.html" style="padding:0;border:none;">Home</a>
+      <a href="about.html" style="padding:0;border:none;">About</a>
+      <a href="services.html" style="padding:0;border:none;">Services</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
